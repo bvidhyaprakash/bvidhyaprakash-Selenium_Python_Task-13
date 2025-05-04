@@ -3,7 +3,7 @@ from PageObjects.base_page import BasePage
 from TestData.data import Data
 from Configuration.conftest import driver_setup
 
-def test_title(driver_setup):
+def test_drag_and_drop(driver_setup):
     driver_setup.get(Data.url)
     driver_setup.switch_to.frame(0) # Switch to the iframe containing drag-drop elements
     base_page = BasePage(driver_setup)
